@@ -12,14 +12,12 @@ public class BankAccount_Hasan {
     //double withdrawn;
     double remain_balance;
     int counter = 0;
-    
 	
 	static int level=4;
 	static int numBankAccounts;
 	
 	//12_1 declare a boolean isClosed
 	 private boolean isClosed;
-	
 	
 	public BankAccount_Hasan(String number) 
 	{
@@ -28,8 +26,6 @@ public class BankAccount_Hasan {
 		this.interestRate = 0.1;
 		numBankAccounts++;	
 	}
-	
-	
 	
 	//create a bank account with specific values for the instance variables 
 	//acctNumber, balance;   interestRate
@@ -48,13 +44,8 @@ public class BankAccount_Hasan {
 		//this.balance = 0.0;
 		this.interestRate = 0.20;
 		//this.Balance = 200;
-		numBankAccounts++;
-		
+		numBankAccounts++;	
 	}
-	
-	
-	
-	
 	
 	// 12_4 write getters for all the private variables
 	public double getBalance() 
@@ -63,21 +54,13 @@ public class BankAccount_Hasan {
 		return this.balance;
 	}
 	
-	/*public double getBalance(double b) {
-		
-		return this.balance;
-	}*/
-	
 	public boolean isClosed() 
 	{
-		
 		return this.isClosed;
-		
 	}
 	
 	public String getacctNumber()
 	{
-		
 		return this.acctNumber;
 	}
 	// cover also the getter for a
@@ -85,16 +68,13 @@ public class BankAccount_Hasan {
 	
 	//12_5 write setters for all the private variables
 	//Enforce data integrity: balance < 1,000,000    acctNumber must be exactly 6 digits
-	
 	// balance
 	public void setBalance(double b) 
 	{
 		if(b<1000000)
 			this.balance = b;
 		else 
-			System.out.println("balance must be < 1 million ");
-		
-		
+			System.out.println("balance must be < 1 million ");	
 	}
 	
 	public void setisClosed(boolean s) 
@@ -142,10 +122,7 @@ public class BankAccount_Hasan {
 			System.out.println("The overdraft is " + this.remain_balance + "\n Since the account is in overdraft mode, more money cannot be withdrawn at this point");
 			//break;
 		}	
-		/*else if (this.remain_balance>=-500) {
-			this.interestRate = 0;
-		System.out.println("Your account balance is "+ this.remain_balance);
-		}*/
+		
 		else 
 		{
 			this.overdraft = true;
