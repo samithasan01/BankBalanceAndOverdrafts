@@ -20,16 +20,7 @@ public class BankAccount_Hasan {
 	//12_1 declare a boolean isClosed
 	 private boolean isClosed;
 	
-	//constructors
-	//create a bank account that will take an account number as argument 
-	//and set balance to 0 and interest rate to 1%;
 	
-	/*double deposit(double amount) {
-		amount = 555;
-		balance = balance + amount;
-		return amount;
-
-}*/
 	public BankAccount_Hasan(String number) 
 	{
 		this.acctNumber = number;
@@ -129,31 +120,6 @@ public class BankAccount_Hasan {
 
 		
 		
-		
-		
-		/*System.out.println("acct2:acctNumber is " + acctNumber + 
-				" balance is " + balance + " and interestRate is " + interestRate);
-		
-		System.out.println("acct3:acctNumber is " + acctNumber + 
-				" balance is " + balance + " and interestRate is " + interestRate);*/
-		
-	}
-	// 12_7
-	/*public boolean withdrew_basic(double withdrawn) {
-		//subtract amount from our balance
-		this.remain_balance = this.balance-this.withdrawn;
-		if(this.remain_balance>= 0) 
-		{
-			return true;
-		}	
-		else 
-		{
-			return false;
-		}
-	}*/
-	// 12_8
-	//Declare a new instance variable overdraft
-	//that is initialized to false.
 	
 	//boolean overdraft;
 	public void hasan_withdraw(double withdrawn)
@@ -194,44 +160,4 @@ public class BankAccount_Hasan {
 
 
 		
-		/*else 
-		{
-			this.overdraft = true;
-			this.interestRate = 0.1;
-		
-		}
-		this.remain_balance -= 300;
-		if (this.remain_balance>=-500) 
-		{
-			this.overdraft = true;
-			this.interestRate = 0;
-		System.out.println("The overdraft is "+ this.remain_balance);
-		}
-			
-		
-		else 
-		{
-			this.overdraft = false;
-			this.interestRate = 0;
-		}
-		this.remain_balance +=2000;
-		if (this.remain_balance>=-500)
-		{
-			this.overdraft = true;
-		System.out.println("The overdraft is "+ this.remain_balance);
-		}
-			
-		
-		else 
-		{
-			this.overdraft = false;
-			this.interestRate = 0;
-		}
-		
-		return this.overdraft;*/
-		
-		
-	//}
-	
-//}
 
